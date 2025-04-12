@@ -34,7 +34,7 @@ Built specifically for:
 | Layer       | Technology           |
 |-------------|----------------------|
 | Backend     | Laravel              |
-| Frontend    | React + TailwindCSS  |
+| Frontend    | Next.js              |
 | Database    | SQLight              |
 | PDF Engine  | DOMPDF + QRLib       |
 | Hosting     | Local/Remote Server  |
