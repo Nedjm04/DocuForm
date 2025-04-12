@@ -13,14 +13,14 @@ class Evaluation extends Model
     protected $fillable = [
         'stagiaire_id',
         'formation_id',
-        'reponses',
+        'reponses_json',
         'commentaires',
         'note_globale',
         'completed'
     ];
 
     protected $casts = [
-        'reponses' => 'array',
+        'reponses_json' => 'array',
         'completed' => 'boolean'
     ];
 

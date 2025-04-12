@@ -14,7 +14,6 @@ class Certificate extends Model
         'stagiaire_id',
         'formation_id',
         'url',
-        'qr_code',
         'uuid',
         'verified',
         'verified_at'

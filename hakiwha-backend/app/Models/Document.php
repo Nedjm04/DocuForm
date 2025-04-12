@@ -14,7 +14,6 @@ class Document extends Model
         'type',
         'formation_id',
         'url',
-        'metadata'
     ];
 
     protected $casts = [

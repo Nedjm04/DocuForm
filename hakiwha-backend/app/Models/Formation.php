@@ -15,19 +15,12 @@ class Formation extends Model
         'categorie',
         'formateur_nom',
         'duree',
-        'date_debut',
-        'date_fin',
+        'date_d',
         'client_id',
-        'description',
-        'lieu',
-        'prix',
-        'status'
     ];
 
     protected $casts = [
-        'date_debut' => 'date',
-        'date_fin' => 'date',
-        'prix' => 'decimal:2'
+        'date_d' => 'datetime',
     ];
 
     public function client()
@@ -35,12 +28,12 @@ class Formation extends Model
         return $this->belongsTo(Client::class);
     }
 
-    public function groups()
+    public function groupes()
     {
-        return $this->hasMany(Group::class);
+        return $this->hasMany(Groupe::class);
     }
 
-    public function sessions()
+    public function session()
     {
         return $this->hasMany(Session::class);
     }
@@ -55,8 +48,8 @@ class Formation extends Model
         return $this->hasMany(Evaluation::class);
     }
 
-    public function certificates()
+    public function certificats()
     {
-        return $this->hasMany(Certificate::class);
+        return $this->hasMany(Certificat::class);
     }
 }
