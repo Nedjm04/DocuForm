@@ -16,7 +16,7 @@ A solution that automates the generation, distribution, and validation of traini
 - **Dashboard** for global statistics and evaluation results
 - **QR Code Verification** for documents
 - **Modular Backend** (Laravel + MySQL)
-- **Modern Frontend** (React + TailwindCSS)
+- **Modern Frontend** (Next.js)
 
 ---
 
